@@ -3,9 +3,13 @@
 const express = require('express')
 const app = express()
 
+const api = require("./api.js")
+
 
 app.get('/', (req, res) => {
-    res.send('Happy new year 2025');
+    d=api.all_websites()
+    api.sort_websites(d)
+    res.send(d);
 })
 
 
