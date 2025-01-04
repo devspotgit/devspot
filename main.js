@@ -1,15 +1,31 @@
 
 
 const express = require('express')
+const templates = require("./templates.js")
+
 const app = express()
 
-const api = require("./api.js")
+
+app.use(express.static('static'))
 
 
 app.get('/', (req, res) => {
-    d=api.all_websites()
-    api.sort_websites(d)
-    res.send(d);
+   
+    res.send(templates.home_page())
+})
+
+app.get('/website-template/:id', (req, res) => {
+
+})
+
+app.get('/website-template-category/:id', (req, res) => {
+
+
+})
+
+app.get('/website-template-search/', (req, res) => {
+
+    
 })
 
 

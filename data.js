@@ -6,52 +6,45 @@ const data = [
 
     {
         website:"baker",
-        type:"portfolio",
-        topics:[
-            "programming",
-            "designing"
-        ],
         date:"2024-10-04",
+        categories:[
+            "portfolio",
+        ]
     },
 
     {
         website:"big-bite",
-        type:"business",
-        topics:[
-            "food",
-            "restaurant"
-        ],
         date:"2024-09-12",
+        categories:[
+            "restaurant",
+        ]
     },
 
     {
         website:"karina-blog",
-        type:"blog",
-        topics:[
-            "food",
-            "cooking"            
-        ],
-        date:"2024-08-24"
+        date:"2024-08-24",
+        categories:[
+            "blog",
+            "cooking",
+        ]
     },
 
     {
         website:"daily-fitness",
-        type:"business",
-        topics:[
+        date:"2024-07-22",
+        categories:[
             "fitness",
-            "workout"
-        ],
-        date:"2024-07-22"
+            "membership",
+        ]
     },
     
     {
         website:"beauty-store",
-        type:"ecommerce",
-        topics:[
-            "women",
-            "makeup"
-        ],
-        date:"2024-10-04"
+        date:"2024-10-04",
+        categories:[
+            "online-store",
+            "fashion",
+        ]
     }
 
 

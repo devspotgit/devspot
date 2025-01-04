@@ -3,75 +3,41 @@
 const data = require("./data.js")
 
 
-// return all the website types 
-function types(){
-
-    const _types=[]
-
-    for(let i=0; i<data.length; i++){
-        let j=0
-        for(j; j<_types.length; j++){
-            if(data[i].type == _types[j]){
-                break
-            }
-        }
-        if(j==_types.length){
-            _types.push(data[i].type)
-        }
-    }
-
-    return _types
-
-}
 
 
-// return all the websites topics
-function topics(){
 
-    const _topics=[]
+// return all categories
+function categories(){
+
+    const _categories=[]
 
     for(let i=0; i<data.length; i++){
-        for(let j=0; j<data[i].topics.length; j++){
+        for(let j=0; j<data[i].categories.length; j++){
             let k=0
-            for(k; k<_topics.length; k++){
-                if(data[i].topics[j] == _topics[k]){
+            for(k; k<_categories.length; k++){
+                if(data[i].categories[j] == _categories[k]){
                     break
                 }
             }
-            if(k==_topics.length){
-                _topics.push(data[i].topics[j])
+            if(k==_categories.length){
+                _categories.push(data[i].categories[j])
             }
         }
     }
 
-    return _topics
+    return _categories
 
 }
 
 
-// return websites for specific type
-function type_websites(type){
+// list websites for a specific category
+function category_websites(category){
 
     const websites = []
 
     for(let i=0; i<data.length; i++){
-        if(data[i].type == type){
-            websites.push(data[i])
-        }
-    }
-
-    return websites
-}
-
-
-// list websites for a specific topic
-function topic_websites(topic){
-
-    const websites = []
-
-    for(let i=0; i<data.length; i++){
-        for(let j=0; j<data[i].topics.length; j++){
-            if(data[i].topics[j] == topic){
+        for(let j=0; j<data[i].categories.length; j++){
+            if(data[i].categories[j] == category){
                 websites.push(data[i])
                 break
             }
@@ -90,15 +56,10 @@ function search_websites(keyword){
     const websites = []
 
     for(let i=0; i<data.length; i++){
-        if(data[i].type.includes(keyword)){
-            websites.push(data[i])
-        }
-        else{
-            for(let j=0; j<data[i].topics.length; j++){
-                if(data[i].topics[j].includes(keyword)){
-                    websites.push(data[i])
-                    break
-                }
+        for(let j=0; j<data[i].categories.length; j++){
+            if(data[i].categories[j].includes(keyword)){
+                websites.push(data[i])
+                break
             }
         }
     }
@@ -168,10 +129,8 @@ function all_websites(){
 
 
 module.exports = {
-    types,
-    topics,
-    type_websites,
-    topic_websites,
+    categories,
+    category_websites,
     sort_websites,
     search_websites,
     all_websites
