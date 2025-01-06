@@ -144,58 +144,25 @@ function home_page(){
                 <script src="/js/main.js" type="module"></script>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>free website templates</title>
+                <title>Free Website Templates</title>
             </head>
             <body>
                 <div class="home">
                     <div class="hero"> 
-                        <div class="hero-wrapper">
-                            <a href="">DevSpot</a>
-                            <span>Free Html templates</span>
-                            <span>Get accessed to a vast collection of template with modern design</span>
-                            <form action="/website-template-search/" method="get">
-                                <input type="text" placeholder="Search Templates..."/>
-                                <button></button>
-                            </form>
-                            <a href="/website-template-category/all">All Templates</a>
-                        </div> 
-                    </div>
-                    <div class="features">
-                        <div>Clean, modern design with a focus on content and readability. Ideal for blogs, portfolios, and personal websites.</div>
-                        <div>Timeless and elegant design with a focus on professionalism. Suitable for businesses, organizations, and e-commerce.</div>
-                        <div>Bold and unique design with a focus on visual appeal. Perfect for artists, designers, and photographers.</div>
-                        <div>Bold and unique design with a focus on visual appeal. Perfect for artists, designers, and photographers.</div>
-                    </div>
-                    <div class="technologies">
-                        <div class="technologies-wrapper">
-                            <div>Built with the latest HTML standards for better performance, accessibility, and search engine optimization (SEO).</div>
-                            <div>Leveraging the latest CSS features for advanced styling and animations.</div>
-                            <div>Designed with mobile devices in mind, ensuring optimal viewing on smaller screens.</div>
-                            <div>Includes features like clean code, proper headings, and meta descriptions to improve search engine rankings.</div>
-                        </div>
-                    </div>
-                    <div class="categories">
+                        <a href="">DevSpot</a>
+                        <span>Free Html Website Templates</span>
+                        <span>Get accessed to a vast collection of templates with modern design</span>
+                        <form action="/website-template-search/" method="get">
+                            <input type="text" placeholder="Search Templates..."/>
+                            <button></button>
+                        </form>
                         <div>
-                            <span>Fitness</span>
-                            <a href="">Check It Out</a>
+                            <span>Built with the latest HTML standards for better performance, accessibility, and search engine optimization (SEO)</span>
+                            <span>Leveraging the latest CSS features for advanced styling and animations.</span>
+                            <span>Designed with mobile devices in mind, ensuring optimal viewing on smaller screens.</span>
+                            <span>Includes features like clean code, proper headings, and meta descriptions to improve search engine rankings.</span>
                         </div>
-                        <div>
-                            <span>Restaurant</span>
-                            <a href="">Check It Out</a>
-                        </div>
-                        <div>
-                            <span>Membership</span>
-                            <a href="">Check It Out</a>
-                        </div>
-                         <div>
-                            <span>Blog</span>
-                            <a href="">Check It Out</a>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <div class="social-wrapper">
-                            <a href="">DevSpot</a>
-                        </div>
+                        <a href="/website-template-category/all">All Templates</a> 
                     </div>
                 </div>
             </body>
