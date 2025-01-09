@@ -2,6 +2,7 @@
 
 
 @import url("/css/home.css");
+@import url("/css/page.css");
 
 
 :root{
@@ -15,6 +16,7 @@
 
 body{
     margin:0px;
+    overflow-x:hidden;
 }
 
 

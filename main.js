@@ -20,6 +20,7 @@ app.get('/website-template/:id', (req, res) => {
 
 app.get('/website-template-category/:id', (req, res) => {
 
+    res.send(templates.category_page(req.params.id))
 
 })
 
